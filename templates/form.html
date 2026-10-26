@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user form</title>
+</head>
+<body>
+
+        <h1>Upload a CSV file here</h1>
+    <form method="POST" action="/upload" enctype="multipart/form-data"><!--Whenever we have to submit a file in a form,this enctype attribute is important-->
+        <input name="file" type="file"><!-- name="file",variable name which will consist of file name-->
+        <button type="submit">Submit</button>  <!--whenever user hit hte submit button,this /upload route will be triggered-->
+
+    </form>
+    
+</body>
+</html>
